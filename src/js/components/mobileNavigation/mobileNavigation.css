@@ -1,0 +1,29 @@
+.mobileNav {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 6;
+    width: 100%;
+    background-color: #fff;
+    border-top: 3px solid black;
+    padding: 10px 40px;
+    transition: all .3s ease-in-out;
+    transition-delay: 22\0ms;
+}
+
+.mobileNav__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobileNav.hide {
+    transform: translateY(100%);
+}
+
+@media(max-width:768px) {
+    .mobileNav {
+        display: block;
+    }
+}

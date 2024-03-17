@@ -1,0 +1,16 @@
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    border-bottom: 3px solid black;
+}
+
+.header__logo {
+    text-align: center;
+}
+
+.header__auth {
+    text-align: right;
+}

@@ -1,0 +1,154 @@
+.home__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.item {
+    padding: 24px;
+    border: 2px solid var(--mainBtns-color);
+    background-color: #FFD465;
+    border-radius: 16px;
+    box-shadow: 0px 3px 0px 0px var(--mainBtns-color);
+    position: relative;
+    width: 100%;
+}
+
+.item__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 900;
+    color: #18191F;
+    font-size: 21px;
+}
+
+.item__text {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #474A57;
+    font-size: 17px;
+}
+
+.item__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item__info span,
+.item__author {
+    color: #18191F;
+    font-size: 12px;
+    font-weight: 700;
+    user-select: none;
+}
+
+.item__like {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.btn-like {
+    transition: all .3s ease-in-out;
+}
+
+.btn-like.active svg {
+    fill: #FFBD12;
+}
+
+.btn-like.active {
+    animation: likeActive 400ms ease-in-out alternate;
+}
+
+@keyframes likeActive {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(1turn);
+    }
+}
+
+@media (hover:hover) {
+    .btn-like:hover {
+        transform: scale(1.2);
+    }
+
+    .item__author:hover {
+        text-decoration: underline;
+    }
+}
+
+.item__like span {
+    user-select: none;
+}
+
+.item__control {
+    top: 25px;
+    right: 25px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.item-red {
+    background-color: #FF9692;
+}
+
+.item-green {
+    background-color: #D6FCF7;
+}
+
+.item-white {
+    background-color: #FFF3F8;
+}
+
+.item-yellow {
+    background-color: #FFD465;
+}
+
+.item-pink {
+    background-color: #FF89BB;
+}
+
+.item__images {
+    margin: 0 auto;
+    max-width: 450px;
+    padding: 15px;
+    display: flex;
+    background-color: rgb(255, 255, 255, 0.2);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border-radius: 16px;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.swiper-pagination {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.swiper-pagination-fraction {
+    user-select: none;
+    width: max-content;
+    height: max-content;
+    top: 15px;
+    left: 15px;
+    background-color: rgb(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 16px;
+    font-size: 12px;
+}
+
+.swiper-slide img {
+    height: 250px;
+}

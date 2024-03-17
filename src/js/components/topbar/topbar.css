@@ -1,0 +1,15 @@
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    gap: 60px;
+    padding: 10px 0;
+}
+
+.topbar__auth {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
